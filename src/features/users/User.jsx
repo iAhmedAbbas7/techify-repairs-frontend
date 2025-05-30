@@ -3,6 +3,7 @@ import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
 import { useGetUsersQuery } from "./usersApiSlice";
 import { memo } from "react";
+import AVATAR from "../../assets/images/AVATAR.png";
 
 const User = ({ userId }) => {
   // Selecting the User through UserID from the Get users Query
@@ -34,7 +35,7 @@ const User = ({ userId }) => {
             className="flex items-center justify-center rounded-full"
           >
             <img
-              src={user?.avatar}
+              src={user?.avatar || AVATAR}
               alt={user?.username}
               className="img-fluid w-[74px] h-[74px] rounded-full"
             />

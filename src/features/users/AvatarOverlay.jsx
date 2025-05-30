@@ -3,6 +3,7 @@ import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useUpdateUserMutation } from "./usersApiSlice";
 import toast from "react-hot-toast";
+import AVATAR from "../../assets/images/AVATAR.png";
 
 const AvatarOverlay = ({ user }) => {
   // Hover State
@@ -12,8 +13,7 @@ const AvatarOverlay = ({ user }) => {
   // Update User Mutation
   const [updateUser] = useUpdateUserMutation();
   // Default Avatar
-  const DEFAULT_AVATAR =
-    "https://techify-repairs-api.onrender.com/uploads/AVATAR.png";
+  const DEFAULT_AVATAR = AVATAR;
   // Removing Blob URL to Avoid Memory Leaks when Local Avatar is Available on Unmount
   useEffect(() => {
     return () => {
