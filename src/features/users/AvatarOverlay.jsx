@@ -12,7 +12,8 @@ const AvatarOverlay = ({ user }) => {
   // Update User Mutation
   const [updateUser] = useUpdateUserMutation();
   // Default Avatar
-  const DEFAULT_AVATAR = "http://localhost:3500/uploads/AVATAR.png";
+  const DEFAULT_AVATAR =
+    "https://techify-repairs-api.onrender.com/uploads/AVATAR.png";
   // Removing Blob URL to Avoid Memory Leaks when Local Avatar is Available on Unmount
   useEffect(() => {
     return () => {
