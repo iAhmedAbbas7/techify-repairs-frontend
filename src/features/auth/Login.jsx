@@ -98,11 +98,10 @@ const Login = () => {
       hasShownToast.current = true;
     }
   }, [isSuccess, currentUser]);
-
   // Loading State
   if (isLoading)
     return (
-      <section className="h-screen flex items-center justify-center bg-color-LG">
+      <section className="w-screen h-screen flex items-center justify-center bg-color-LG">
         <PulseLoader color={"#f5cf87"} />
       </section>
     );

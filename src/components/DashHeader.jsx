@@ -135,7 +135,7 @@ const DashHeader = () => {
   // If Loading
   if (isLoading)
     return (
-      <section className="h-screen w-screen flex items-center justify-center bg-color-LG z-[1000]">
+      <section className="h-screen w-screen flex items-center justify-center bg-color-LG z-[999999]">
         <PulseLoader color={"#f5cf87"} />
       </section>
     );
