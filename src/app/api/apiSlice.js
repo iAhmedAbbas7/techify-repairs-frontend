@@ -3,7 +3,7 @@ import { setCredentials } from "../../features/auth/authSlice";
 
 // Setting Base Query
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://techify-repairs.onrender.com",
+  baseUrl: "https://techify-repairs-api.onrender.com",
   credentials: "include", // Includes "Cookies" (Refresh Token) is Sent With Requests
   prepareHeaders: (headers, { getState }) => {
     // Finding the Token from Auth Slice
