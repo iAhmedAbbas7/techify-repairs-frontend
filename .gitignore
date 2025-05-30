@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Environment files
+.env
+.env.local
+
+# package-lock.json
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# OS-specific
+Thumbs.db
+
+# *.d.ts
+
+# Miscellaneous
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
