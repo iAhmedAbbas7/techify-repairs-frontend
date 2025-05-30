@@ -58,7 +58,6 @@ const Note = ({ noteId }) => {
           <div className="flex items-center justify-start gap-[1rem]">
             <img
               src={note.avatar || PROFILE}
-              alt={note.username || "User Avatar"}
               className="img-fluid w-[64px] h-[64px] rounded-full"
             />
             <span className="text-[1.5rem] text-color-G1 font-bold">

@@ -105,7 +105,6 @@ const AvatarOverlay = ({ user }) => {
       {/* Avatar */}
       <img
         src={localAvatar}
-        alt={user?.username}
         className="img-fluid sm:w-[124px] sm:h-[124px] w-[94px] h-[94px] rounded-full object-cover"
       />
       {/* Hidden File Input for Avatar Upload */}

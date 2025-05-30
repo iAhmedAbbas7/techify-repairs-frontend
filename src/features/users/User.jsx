@@ -36,7 +36,6 @@ const User = ({ userId }) => {
           >
             <img
               src={user?.avatar || AVATAR}
-              alt={user?.username}
               className="img-fluid w-[74px] h-[74px] rounded-full"
             />
           </Link>
