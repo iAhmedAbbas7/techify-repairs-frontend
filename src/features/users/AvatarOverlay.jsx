@@ -9,7 +9,7 @@ const AvatarOverlay = ({ user }) => {
   // Hover State
   const [hovered, setHovered] = useState(false);
   // State to Display Avatar
-  const [localAvatar, setLocalAvatar] = useState(user?.avatar);
+  const [localAvatar, setLocalAvatar] = useState(user?.avatar || AVATAR);
   // Update User Mutation
   const [updateUser] = useUpdateUserMutation();
   // Default Avatar
