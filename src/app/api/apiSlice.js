@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../../features/auth/authSlice";
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:7000";
+
 // Setting Base Query
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://techify-repairs-api.onrender.com",
+  baseUrl: BASE_URL,
   credentials: "include", // Includes "Cookies" (Refresh Token) is Sent With Requests
   prepareHeaders: (headers, { getState }) => {
     // Finding the Token from Auth Slice

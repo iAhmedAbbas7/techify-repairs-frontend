@@ -11,7 +11,8 @@ dist/
 dist-ssr/
 
 # Environment files
-.env
+.env.development
+.env.production
 .env.local
 
 # package-lock.json
